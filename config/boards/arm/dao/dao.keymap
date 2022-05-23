@@ -21,24 +21,14 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-// -----------------------------------------------------------------------------------------
-//        |   ~  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  [   |
-//        | LALT |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |CTRL/'|
-//        | LSFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | RALT |
-//                           | GUI | SPC | LWR |   | LWR | BKSP | RSE |
-                        bindings = <
-&kp ESC         &kp Q           &kp W           &kp E           &kp R                 &kp T                   &kp Y           &kp U                   &kp I           &kp O           &kp P           &kp LBKT        
-&kp LCTRL       &kp A           &kp S           &kp D           &kp F                 &kp G                   &kp H           &kp J                   &kp K           &kp L           &kp SEMI        &mt RCTRL SQT
-&kp LALT        &kp Z           &kp X           &kp C           &kp V                 &kp B                   &kp N           &kp M                   &kp COMMA       &kp DOT         &kp FSLH        &mt RALT BSLH
-                                                &lt RSE TAB     &kp LGUI             &lt LWR RET             &lt LWR ESC     &mt RSHFT BSPC          &lt RSE DEL
-                        >;
+                         bindings = <
+      &kp ESC   &kp Q   &kp W     &kp E   &kp R        &kp T              &kp Y      &kp U          &kp I    &kp O     &kp P         &kp LEFT_BRACKET
+ &mt LALT TAB   &kp A   &kp S     &kp D   &kp F        &kp G              &kp H      &kp J          &kp K    &kp L  &kp SEMI                 &kp APOS
+    &kp LSHFT   &kp Z   &kp X     &kp C   &kp V        &kp B              &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &mt LCTRL RIGHT_BRACKET
+                               &kp LGUI   &mo 1  &lt 2 ENTER          &kp SPACE  &kp RSHFT  &kp BACKSPACE
+            >;
                 };
                 lower_layer {
-// -----------------------------------------------------------------------------------------
-// |     |  _  |  F1 |  F2 |  F3 |  F4 |  F5 |   |  F6 |  F7 |  F8 |  F9 | F10 | F11 | F12 |
-//       |  +  |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |  -  |
-//       |  =  |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |     |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
 &kp UNDER       &kp F1          &kp F2          &kp F3          &kp F4          &kp F5                  &kp F6          &kp F7          &kp F8          &kp F9          &kp F10         &kp F11
 &mt LCTRL PLUS  &kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT               &kp CARET       &kp AMPS        &kp STAR        &kp LPAR        &kp RPAR        &mt RCTRL MINUS
@@ -48,11 +38,6 @@
                 };
 
                 raise_layer {
-// -----------------------------------------------------------------------------------------
-// |     | NMLK |  /  |  7  |  8  |  9  |  -  |   | VOLU| HOME| PRSC| PGUP| SCLK| CLCK|     |
-//       | CTRL |  *  |  4  |  5  |  6  |  +  |   | MUT | LEFT|  UP | RGHT| INS | APP |
-//       |      |  0  |  1  |  2  |  3  |  .  |   | VOLD| END | DOWN| PGDN| PAUS|     |
-//                          |     |     | ADJ |   | ADJ |     |     |
                         bindings = <
 &kp KP_NUM              &kp KP_SLASH            &kp KP_N7       &kp KP_N8       &kp KP_N9        &kp KP_MINUS           &kp C_VOL_UP    &kp HOME        &kp PSCRN       &kp PG_UP       &kp SLCK                &kp CAPS        
 &mt LCTRL EQUAL         &kp KP_MULTIPLY         &kp KP_N4       &kp KP_N5       &kp KP_N6        &kp KP_PLUS            &kp C_MUTE      &kp LEFT        &kp UP          &kp RIGHT       &kp INS                 &mt RCTRL K_APP
