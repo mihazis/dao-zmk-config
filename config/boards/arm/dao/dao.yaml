@@ -1,5 +1,5 @@
 identifier: dao
-name: Daos
+name: Dao
 type: keyboard
 arch: arm
 toolchain:
