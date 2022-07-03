@@ -30,7 +30,7 @@
    &kp LWIN &kp ESCAPE &kp Q &kp W &kp E &kp R &kp T &kp Y         &kp U  &kp I     &kp O   &kp P    &kp LBKT &mt RWIN RBKT
             &kp LWIN &kp A &kp S &kp D &kp F &kp G &kp H         &kp J  &kp K     &kp L   &kp SEMI &kp SQT
             &kp LCTRL  &kp Z &kp X &kp C &kp V &kp B &kp N         &kp M  &kp COMMA &kp DOT &kp FSLH &kp RBKT
-                       &mt LSHFT TAB &kp SPACE &lt LWR           &kp BSPC &mt RSE DEL &mt RSHFT ENTER
+                       &mt LSHFT TAB &kp SPACE &lt LWR DEL           &kp BSPC &mt RSE DEL &mt RSHFT ENTER
                         >;
                 };
                 lower_layer {
