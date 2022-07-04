@@ -57,7 +57,7 @@
                         bindings = <
    &trans &kp KP_NUM      &kp KP_SLASH    &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_MINUS        &kp INS      &kp BSPC &kp DEL   &kp PG_UP &kp SLCK &kp CAPS &trans
           &mt LCTRL EQUAL &kp KP_MULTIPLY &kp KP_N4 &kp KP_N5 &kp FSLH &kp LS(FSLH)         &kp LEFT     &kp DOWN &kp UP    &kp RIGHT &kp INS  &mt RCTRL K_APP
-          &trans          &kp KP_N0       &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp LALT(LSHFT)          &kp HOME     &kp END  &kp PG_UP &kp PG_DN &kp PAUSE_BREAK &trans
+          &trans          &kp KP_N0       &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp LA(LS)          &kp HOME     &kp END  &kp PG_UP &kp PG_DN &kp PAUSE_BREAK &trans
                                                            &lt ADJ RET &trans &trans        &lt ADJ ESC  &trans   &trans
                         >;
                 };
