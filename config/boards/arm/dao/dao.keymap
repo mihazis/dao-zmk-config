@@ -50,15 +50,15 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |     | NMLK |  /  |  7  |  8  |  9  |  -  |                  | VOLU| HOME| PRSC| PGUP| SCLK| CLCK|     |
-//       | CTRL |  *  |  4  |  5  |  .  |  ,  |                  | MUT | LEFT|  UP | RGHT| INS | APP |
-//       |      |  0  |  1  |  2  |  3  |  .  |                  | VOLD| END | DOWN| PGDN| PAUS|     |
-//                          |     |     | ADJ |                  | ADJ |     |     |
+// |     |    A+T        |   C+q    |   C+w   |   C+e   |   A+4   |    -    |                  | INS| BSPC| DEL| PGUP| SCLK| CLCK|     |
+//       |    C+A+T      |   C+a    |   C+s   |   TAB   |     .   |    ,    |                  | LEFT | DOWN|  UP | RGHT| INS | APP |
+//       |      @        |    ~     |   C+x   |   C+c   |   C+v   |   A+S   |                  | HOME| PGDN | PGUP| END| PAUS|     |
+//                                            |   ADJ   |         |         |                  | ADJ |     |     |
                         bindings = <
-   &trans &kp KP_NUM      &kp KP_SLASH    &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_MINUS        &kp INS      &kp BSPC &kp DEL   &kp PG_UP &kp SLCK &kp CAPS &trans
-          &mt LCTRL EQUAL &kp KP_MULTIPLY &kp KP_N4 &kp KP_N5 &kp FSLH &kp LS(FSLH)         &kp LEFT     &kp DOWN &kp UP    &kp RIGHT &kp INS  &mt RCTRL K_APP
-          &trans          &kp KP_N0       &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp LA(LSHFT)       &kp HOME     &kp PG_DN   &kp PG_UP &kp END &kp PAUSE_BREAK &trans
-                                                           &lt ADJ RET &trans &trans        &lt ADJ ESC  &trans   &trans
+   &trans &kp LA(TAB)     &kp LC(Q)  &kp LC(W) &kp LC(E) &kp LA(N4) &kp KP_MINUS                &kp INS      &kp BSPC &kp DEL   &kp PG_UP &kp SLCK &kp CAPS &trans
+          &mt LC(LA(TAB)) &kp LC(A)  &kp LC(S) &kp TAB   &kp FSLH   &kp LS(FSLH)                &kp LEFT     &kp DOWN &kp UP    &kp RIGHT &kp INS  &mt RCTRL K_APP
+          &kp AT          &kp GRAVE  &kp LC(X) &kp LC(C) &kp LC(V)  &kp LA(LSHFT)               &kp HOME     &kp PG_DN   &kp PG_UP &kp END &kp PAUSE_BREAK &trans
+                                               &lt ADJ RET &trans   &trans                      &lt ADJ ESC  &trans   &trans
                         >;
                 };
                 adjust_layer {
