@@ -27,10 +27,10 @@
 //        |  LCTL   |   Z   |   X   |   C   |   V   |   B   |                  |   N   |   M   |     ,     |    .    |    /    |    ]   |
 //                            |  SHFT    |  LWR/LALT  |  RSE/SPACE |   | RSE/BSPC |  LWR/DEL    |     SFT/ENT    |
                         bindings = <            
-    &trans &kp ESC  &kp Q &kp W &kp E &kp R   &kp T             &kp Y &kp U  &kp I     &kp O   &kp P    &kp LBKT &mt RWIN RBKT
-           &kp TAB &kp A &kp S &kp D &kp F   &kp G             &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-           &kp LCTRL  &kp Z &kp X &kp C &kp V &kp B             &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RBKT           
-               &kp LSHFT &lt LWR LALT &lt RSE SPACE             &kp BSPC &lt LWR DEL &mt RSHFT ENTER
+    &trans &kp ESC    &kp Q   &kp W   &kp E   &kp R   &kp T                   &kp Y      &kp U    &kp I       &kp O    &kp P     &kp LBKT &trans
+           &kp TAB    &kp A   &kp S   &kp D   &kp F   &kp G                   &kp H      &kp J    &kp K       &kp L    &kp SEMI  &kp SQT
+           &kp LCTRL  &kp Z   &kp X   &kp C   &kp V   &kp B                   &kp N      &kp M    &kp COMMA   &kp DOT  &kp FSLH  &kp RBKT           
+                                &kp LSHFT &lt LWR LALT &lt RSE SPACE     &lt RSE BSPC &lt LWR DEL &mt RSHFT ENTER
                         >;
                 };
                 lower_layer {
@@ -40,7 +40,7 @@
 //        |   +     |  !    |   @   |   #   |   $   |   %   |                  |  ^    |  &    |    *     |   (   |   )   |  -  |
 //                                     |  GUI      |     | SPC |                           | ENT   |       |  ALT   |
                         bindings = <
-   &trans &kp UNDER      &kp F1   &kp F2 &kp F3   &kp F4   &kp F5           &kp F6    &kp F7   &kp F8   &kp F9   &kp F10  &kp F11 &mt RGUI F12   
+   &trans &kp UNDER      &kp F1   &kp F2 &kp F3   &kp F4   &kp F5               &kp F6    &kp F7   &kp F8   &kp F9   &kp F10  &kp F11 &mt RGUI F12   
           &mt LALT EQUAL &kp N1   &kp N2 &kp N3   &kp N4   &kp N5           &kp N6    &kp N7   &kp N8   &kp N9   &kp N0   &kp F12
           &mt LCTRL PLUS &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT        &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR &mt RCTRL MINUS
                                         &lt ADJ TAB &trans &trans           &trans &trans &lt ADJ DEL
@@ -50,13 +50,13 @@
                 raise_layer {
 // -----------------------------------------------------------------------------------------------------------------------------------------------------------
 // |     |    A+T        |   C+q    |   C+w   |   C+e   |   A+4   |    -    |                  | INS| BSPC| DEL| PGUP| SCLK| CLCK|     |
-//       |    C+A+T      |   C+a    |   C+s   |   TAB   |     .   |    ,    |                  | LEFT | DOWN|  UP | RGHT| INS | APP |
+//       |    C+A+T      |   C+a    |    |    |   TAB   |     .   |    ,    |                  | LEFT | DOWN|  UP | RGHT| INS | APP |
 //       |      @        |    ~     |   C+x   |   C+c   |   C+v   |   A+S   |                  | HOME| PGDN | PGUP| END| PAUS|     |
 //                                            |   ADJ   |         |         |                  | ADJ |     |     |
                         bindings = <
    &trans &kp LA(TAB)     &kp LC(Q)  &kp LC(W) &kp LC(E) &kp LA(N4) &kp KP_MINUS                &kp INS      &kp BSPC &kp DEL   &kp PG_UP &kp SLCK &kp CAPS &trans
-          &kp LC(LA(TAB)) &kp LC(A)  &kp Pipe  &kp TAB   &kp FSLH   &kp LS(FSLH)                &kp LEFT     &kp DOWN &kp UP    &kp RIGHT &kp INS  &mt RCTRL K_APP
-          &kp AT          &kp GRAVE  &kp LC(X) &kp LC(C) &kp LC(V)  &kp LA(LSHFT)               &kp HOME     &kp PG_DN   &kp PG_UP &kp END &kp PAUSE_BREAK &trans
+          &kp LC(LA(TAB)) &kp LC(A)  &kp PIPE &kp TAB   &kp FSLH   &kp LS(FSLH)                &kp LEFT     &kp DOWN &kp UP    &kp RIGHT &kp INS  &mt RCTRL K_APP
+          &kp AT          &kp GRAVE  &kp LC(X) 3 &kp LC(C) &kp LC(V)  &kp LA(LSHFT)               &kp HOME     &kp PG_DN   &kp PG_UP &kp END &kp PAUSE_BREAK &trans
                                                &lt ADJ RET &trans   &trans                      &lt ADJ ESC  &trans   &trans
                         >;
                 };
