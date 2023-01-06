@@ -15,11 +15,11 @@
 #define ADJ 3
 
 &lt {
-    quick_tap_ms = <420>;
+    quick_tap_ms = <220>;
 };
 
 &mt {
-    quick_tap_ms = <420>;
+    quick_tap_ms = <220>;
 };
 
 / {
